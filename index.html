@@ -3,14 +3,98 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Testing</title>
-</head>
-<body>
 
-	<h1 class="hello_there">Testing, this is a testing!</h1>
+	<title>a mutan</title>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			font-family: 'Inconsolata', monospace;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+			transition: linear 1s;
+			-webkit-transition: linear 1s;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: purple;
+		}
+		#loader {
+		  align-content: center;
+		  justify-items: center;
+		  align-items: center;
+		  justify-content: center;
+		  display: flex;
+		  top: 50% !important;
+		  bottom: auto;
+		  z-index: 1;
+		  font-size: 100px;
+		}
+		#myLogo {
+		  display: none;
+		  text-align: center;
+		}
+		.purple, h1 {
+			/*color: purple;*/
+			background: -webkit-linear-gradient(135deg, #4d004d, #ff33ff);
+			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+		}
+		.animate-bottom {
+		  position: relative;
+		  -webkit-animation-name: animatebottom;
+		  -webkit-animation-duration: 1s;
+		  animation-name: animatebottom;
+		  animation-duration: 1s
+		}
+
+		@-webkit-keyframes animatebottom {
+		  from { bottom:-100px; opacity:0 } 
+		  to { bottom:0px; opacity:1 }
+		}
+
+		@keyframes animatebottom { 
+		  from{ bottom:-100px; opacity:0 } 
+		  to{ bottom:0; opacity:1 }
+		}
+	</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+	<center>
+		<div id="loader">Please wait...</div>
+	</center>
+
+	<center>
+		<div style="display: none;" class="animate-bottom" id="myLogo">
+			<h1 class="purple" style="font-size: 330px;"><strong>+</strong></h1>
+			<a href="https://www.beautifultelepath.info" target="_blank">beautifulTelepath</a>
+		</div>
+	</center>
+
+	<center>
+	</center>
+
+	<!-- <script>
+		document.getElementsByName('hello_there').style.display = 'none';
+	</script> -->
 
 	<script>
-		document.getElementsByName('hello_there').style.display = 'none';
+	var myVar;
+
+	function myFunction() {
+	  myVar = setTimeout(showPage, 3000);
+	}
+
+	function showPage() {
+	  document.getElementById("loader").style.display = "none";
+	  document.getElementById("myLogo").style.display = "block";
+	}
 	</script>
 
 </body>
