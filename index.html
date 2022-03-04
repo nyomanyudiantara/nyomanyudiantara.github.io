@@ -3,100 +3,295 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yudiantara</title>
 
-	<title>a mutan</title>
+	<link href="assets/img/add.png" rel="icon">
+  	<link href="assets/img/add.png" rel="apple-touch-icon">
 
-	<style type="text/css">
-		@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-			font-family: 'Inconsolata', monospace;
-		}
-		a {
-			text-decoration: none;
-			color: black;
-			transition: linear 1s;
-			-webkit-transition: linear 1s;
-		}
-		a:hover {
-			text-decoration: underline;
-			/*color: purple;*/
-		}
-		#loader {
-		  align-content: center;
-		  justify-items: center;
-		  align-items: center;
-		  justify-content: center;
-		  display: flex;
-		  /*top: 50% !important;*/
-		  margin-top: 280px;
-		  /*transform: translate(0%, 300%);*/
-		  z-index: 1;
-		  font-size: 100px;
-		}
-		#myLogo {
-		  display: none;
-		  text-align: center;
-		}
-		.purple, h1 {
-			/*color: purple;*/
-			background: -webkit-linear-gradient(135deg, #4d004d, #ffb3ff);
-			-webkit-background-clip: text;
-  			-webkit-text-fill-color: transparent;
-		}
-		.animate-bottom {
-		  position: relative;
-		  -webkit-animation-name: animatebottom;
-		  -webkit-animation-duration: 1s;
-		  animation-name: animatebottom;
-		  animation-duration: 1s
-		}
-
-		@-webkit-keyframes animatebottom {
-		  from { bottom:-100px; opacity:0 } 
-		  to { bottom:0px; opacity:1 }
-		}
-
-		@keyframes animatebottom { 
-		  from{ bottom:-100px; opacity:0 } 
-		  to{ bottom:0; opacity:1 }
-		}
-	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
-<body onload="myFunction()" style="margin:0;">
+<body>
 
-	<center>
-		<div id="loader">Please wait...</div>
-	</center>
+	<br/>
+	<br/>
 
-	<center>
-		<div style="display: none;" class="animate-bottom" id="myLogo">
-			<h1 class="purple" style="font-size: 530px;"><strong>+</strong></h1>
-			<a href="https://www.beautifultelepath.info" target="_blank">beautifulTelepath</a>
+	<div class="logo-box">
+		<span class="plus-logo "><strong>+</strong></span>
+	</div>
+
+	<section class="main">
+		<div class="container">
+			<h2 class="filled-text" style="text-transform: uppercase;">Yudiantara I Nyoman</h2>
+			<h2 class="outline-text" style="text-transform: uppercase;">Yudiantara I Nyoman</h2>
+			<img class="image-animation" alt="Yudiantara" src="assets/img/Yudiantara.jpg">
 		</div>
-	</center>
+	</section>
 
-	<center>
-	</center>
+	<div id="wrapper">
+    <div class="section landing">
+    	<!-- <span class="plus-logo"><b>+</b></span> -->
 
-	<!-- <script>
-		document.getElementsByName('hello_there').style.display = 'none';
-	</script> -->
 
-	<script>
-	var myVar;
+    	
+        <div class="landing-text frontend">
 
-	function myFunction() {
-	  myVar = setTimeout(showPage, 3000);
-	}
 
-	function showPage() {
-	  document.getElementById("loader").style.display = "none";
-	  document.getElementById("myLogo").style.display = "block";
-	}
-	</script>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1679 296" fill="none">
+            	<h1 class="front-back-end" style="font-size: 175px; margin-bottom: -25px; margin-top: -25px;">a Front/Back-End</h1>
+
+                <path d="M1219.31 249.169L1215.03 243.356C1204.14 251.106 1187.01 258.469 1166.78 258.469C1115.8 258.469 1089.34 219.718 1089.73 172.442H1218.15C1218.53 170.117 1218.53 167.017 1218.53 164.304C1218.53 127.103 1190.13 93.3899 1144.99 93.3899C1086.23 93.3899 1053.54 146.091 1053.54 198.018C1053.54 255.757 1089.73 294.12 1139.93 294.12C1176.12 294.12 1197.91 273.582 1219.31 249.169ZM1089.73 157.717C1091.68 134.853 1106.07 110.053 1135.65 110.053C1157.44 110.053 1173.78 125.553 1173.78 141.441C1173.78 155.391 1162.89 157.717 1142.26 157.717H1089.73Z" fill="#313638" />
+                <path d="M1462.58 289.082V283.657L1450.51 280.17C1436.89 276.682 1434.56 274.357 1434.56 246.456V153.454C1434.56 116.64 1411.21 94.1649 1373.46 94.1649C1345.84 94.1649 1326.77 108.503 1308.09 126.716H1307.7V98.04L1305.37 96.1024L1234.93 105.403V111.215L1248.55 114.315C1262.56 117.028 1264.9 119.741 1264.9 147.641V246.456C1264.9 274.357 1262.56 276.682 1248.94 280.17L1236.88 283.657V289.082H1338.05V283.657L1325.99 280.17C1312.37 276.682 1310.04 274.357 1310.04 246.456V147.641C1310.04 136.016 1325.21 122.841 1348.17 122.841C1373.85 122.841 1389.42 137.954 1389.42 162.754V246.456C1389.42 274.357 1387.08 276.682 1373.46 280.17L1361.4 283.657V289.082H1462.58Z" fill="#313638" />
+                <path d="M1678.24 289.082V283.27L1664.62 280.17C1651 277.07 1648.28 274.744 1648.28 246.844V1.93754L1645.55 0L1572.78 9.30023V15.1129L1586.4 18.213C1600.41 20.9255 1603.14 23.6381 1603.14 51.5388V101.915C1591.85 99.2025 1580.96 98.4275 1570.06 98.4275C1506.63 98.4275 1473.94 148.804 1473.94 206.93C1473.94 246.069 1495.35 295.283 1542.82 295.283C1568.5 295.283 1588.74 280.557 1605.08 263.507H1605.47V291.407L1607.81 292.957L1678.24 289.082ZM1572.39 265.057C1531.15 265.057 1517.92 213.518 1517.92 180.967C1517.92 150.354 1529.59 113.928 1565.78 113.928C1585.62 113.928 1603.14 126.328 1603.14 144.154V241.806C1603.14 254.206 1589.52 265.057 1572.39 265.057Z" fill="#313638" />
+            </svg>
+        </div>
+        <div class="landing-text developer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1747 380" fill="none">
+                <path d="M282.512 152.564C282.512 52.6698 204.296 25.8499 130.36 25.8499C87.1663 25.8499 34.633 27.7934 0 28.5708V35.1786L14.398 38.6768C29.9634 42.5638 32.6873 46.062 32.6873 78.3237V240.021C32.6873 272.671 29.9634 275.392 14.398 279.667L0 283.554V290.162H128.415C210.911 290.162 282.512 239.243 282.512 152.564ZM225.698 157.229C225.698 237.688 178.613 273.06 119.464 273.06H106.623C89.8902 273.06 85.2206 269.561 85.2206 233.024V44.8959C93.0033 44.5072 108.958 43.3411 122.967 43.3411C185.228 43.3411 225.698 80.2671 225.698 157.229Z" fill="#313638" />
+                <path d="M472.687 250.127L468.406 244.296C457.51 252.07 440.388 259.455 420.153 259.455C369.177 259.455 342.716 220.586 343.105 173.165H471.519C471.908 170.833 471.908 167.723 471.908 165.003C471.908 127.688 443.502 93.8715 398.362 93.8715C339.602 93.8715 306.915 146.734 306.915 198.819C306.915 256.734 343.105 295.215 393.303 295.215C429.493 295.215 451.284 274.614 472.687 250.127ZM343.105 158.395C345.05 135.462 359.448 110.585 389.023 110.585C410.814 110.585 427.158 126.133 427.158 142.07C427.158 156.063 416.262 158.395 395.638 158.395H343.105Z" fill="#313638" />
+                <path d="M591.519 292.494L647.554 144.79C657.283 119.137 660.007 114.084 667.4 110.974L674.405 107.864V102.034H604.36V107.864L616.813 110.974C628.876 114.084 634.324 121.469 623.428 151.398L597.356 224.084C592.297 239.243 590.351 245.851 589.184 252.07H588.406C587.628 245.074 585.293 237.3 581.012 224.862L553.773 149.066C543.655 119.914 547.547 114.472 559.221 110.974L571.284 107.864V102.034H477.113V107.864L484.896 110.974C492.678 113.695 494.624 119.137 504.742 144.79L562.723 292.494H591.519Z" fill="#313638" />
+                <path d="M837.227 250.127L832.947 244.296C822.051 252.07 804.929 259.455 784.694 259.455C733.717 259.455 707.256 220.586 707.645 173.165H836.06C836.449 170.833 836.449 167.723 836.449 165.003C836.449 127.688 808.042 93.8715 762.902 93.8715C704.143 93.8715 671.456 146.734 671.456 198.819C671.456 256.734 707.645 295.215 757.844 295.215C794.033 295.215 815.825 274.614 837.227 250.127ZM707.645 158.395C709.591 135.462 723.989 110.585 753.563 110.585C775.355 110.585 791.698 126.133 791.698 142.07C791.698 156.063 780.803 158.395 760.178 158.395H707.645Z" fill="#313638" />
+                <path d="M955.968 290.162V284.72L943.905 281.222C930.285 277.724 927.95 275.392 927.95 247.406V2.13951L925.616 0.196045L852.847 9.52471V15.3552L866.467 18.4647C880.476 21.1856 882.811 23.9064 882.811 51.8924V247.406C882.811 275.392 880.476 277.724 866.856 281.222L854.793 284.72V290.162H955.968Z" fill="#313638" />
+                <path d="M1168.32 190.656C1168.32 134.296 1134.08 93.4827 1071.82 93.4827C1006.83 93.4827 970.254 142.458 970.254 199.208C970.254 257.901 1006.05 295.993 1065.98 295.993C1127.46 295.993 1168.32 250.515 1168.32 190.656ZM1118.9 212.423C1118.9 247.795 1108.01 281.611 1073.76 281.611C1032.13 281.611 1019.28 210.48 1019.28 177.441C1019.28 141.681 1029.79 108.253 1062.48 108.253C1105.28 108.253 1118.9 179.773 1118.9 212.423Z" fill="#313638" />
+                <path d="M1387.11 182.883C1387.11 139.737 1363.76 94.6488 1315.9 94.6488C1289.83 94.6488 1270.37 109.419 1253.64 126.522H1253.25V98.5358L1250.91 96.5923L1180.48 105.921V111.751L1194.1 114.861C1208.11 117.582 1210.44 120.303 1210.44 148.289V336.417C1210.44 364.403 1208.11 366.735 1194.49 370.233L1182.43 373.732V379.173H1292.55V373.732L1272.71 369.456C1259.09 366.735 1255.58 364.403 1255.58 336.417V288.607C1263.76 290.94 1277.76 292.106 1288.66 292.106C1351.7 292.106 1387.11 243.13 1387.11 182.883ZM1342.75 208.536C1342.75 239.632 1331.08 276.558 1294.5 276.558C1273.09 276.558 1255.58 263.731 1255.58 246.24V148.289C1255.58 135.462 1269.59 124.967 1286.71 124.967C1327.96 124.967 1342.75 171.61 1342.75 208.536Z" fill="#313638" />
+                <path d="M1575.81 250.127L1571.53 244.296C1560.63 252.07 1543.51 259.455 1523.28 259.455C1472.3 259.455 1445.84 220.586 1446.23 173.165H1574.64C1575.03 170.833 1575.03 167.723 1575.03 165.003C1575.03 127.688 1546.62 93.8715 1501.48 93.8715C1442.72 93.8715 1410.04 146.734 1410.04 198.819C1410.04 256.734 1446.23 295.215 1496.43 295.215C1532.61 295.215 1554.41 274.614 1575.81 250.127ZM1446.23 158.395C1448.17 135.462 1462.57 110.585 1492.14 110.585C1513.94 110.585 1530.28 126.133 1530.28 142.07C1530.28 156.063 1519.38 158.395 1498.76 158.395H1446.23Z" fill="#313638" />
+                <path d="M1705.06 290.162V284.72L1685.21 280.445C1671.59 277.724 1668.09 275.392 1668.09 247.406V151.787C1668.09 142.458 1676.65 129.243 1694.55 129.243C1705.83 129.243 1715.56 136.628 1719.07 145.568L1721.4 146.734C1732.68 147.123 1746.3 137.405 1746.3 121.857C1746.3 106.31 1734.63 94.6488 1718.68 94.6488C1700.39 94.6488 1685.6 106.31 1665.75 130.797H1665.36V98.5358L1663.03 96.5923L1591.43 105.921V111.751L1605.05 114.861C1619.06 117.582 1622.95 120.303 1622.95 148.289V247.406C1622.95 275.392 1620.61 277.724 1606.99 281.222L1594.93 284.72V290.162H1705.06Z" fill="#313638" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="section intro">
+        <div class="background-text hello">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1418 483" fill="none">
+                <path d="M403.058 473.48V462.69L379.589 456.343C354.218 449.361 349.778 444.919 349.778 391.605V126.938C349.778 74.2589 354.218 69.1814 379.589 62.1998L403.058 55.8528V45.0631H210.869V55.8528L234.337 62.1998C259.709 69.1814 264.149 74.2589 264.149 126.938V230.393H59.9087V126.938C59.9087 74.2589 64.3487 69.1814 89.7202 62.1998L113.189 55.8528V45.0631H-79V55.8528L-55.5314 62.1998C-30.1599 69.1814 -25.7199 74.2589 -25.7199 126.938V391.605C-25.7199 444.919 -30.1599 449.361 -55.5314 456.343L-79 462.69V473.48H113.189V462.69L89.7202 456.343C64.3487 449.361 59.9087 444.919 59.9087 391.605V262.128H264.149V391.605C264.149 444.919 259.709 449.361 234.337 456.343L210.869 462.69V473.48H403.058Z" fill="#517664" fill-opacity="0.15" />
+                <path d="M695.191 408.106L688.214 398.586C670.454 411.28 642.545 423.339 609.562 423.339C526.471 423.339 483.339 359.87 483.974 282.438H693.288C693.922 278.629 693.923 273.552 693.923 269.109C693.923 208.179 647.62 152.961 574.042 152.961C478.265 152.961 424.985 239.279 424.985 324.327C424.985 418.896 483.974 481.731 565.797 481.731C624.785 481.731 660.305 448.092 695.191 408.106ZM483.974 258.319C487.145 220.873 510.614 180.252 558.82 180.252C594.34 180.252 620.98 205.64 620.98 231.662C620.98 254.511 603.22 258.319 569.602 258.319H483.974Z" fill="#517664" fill-opacity="0.15" />
+                <path d="M888.738 473.48V464.594L869.075 458.882C846.875 453.17 843.069 449.361 843.069 403.664V3.17345L839.263 0L720.652 15.2326V24.753L742.852 29.8305C765.686 34.2733 769.492 38.7162 769.492 84.4139V403.664C769.492 449.361 765.686 453.17 743.486 458.882L723.823 464.594V473.48H888.738Z" fill="#517664" fill-opacity="0.15" />
+                <path d="M1071.86 473.48V464.594L1052.2 458.882C1030 453.17 1026.19 449.361 1026.19 403.664V3.17345L1022.39 0L903.777 15.2326V24.753L925.977 29.8305C948.812 34.2733 952.617 38.7162 952.617 84.4139V403.664C952.617 449.361 948.812 453.17 926.611 458.882L906.949 464.594V473.48H1071.86Z" fill="#517664" fill-opacity="0.15" />
+                <path d="M1418 310.999C1418 218.968 1362.18 152.326 1260.7 152.326C1154.77 152.326 1095.15 232.297 1095.15 324.962C1095.15 420.8 1153.5 483 1251.18 483C1351.4 483 1418 408.741 1418 310.999ZM1337.45 346.541C1337.45 404.298 1319.69 459.516 1263.87 459.516C1196 459.516 1175.07 343.368 1175.07 289.419C1175.07 231.028 1192.19 176.444 1245.47 176.444C1315.25 176.444 1337.45 293.227 1337.45 346.541Z" fill="#517664" fill-opacity="0.15" />
+            </svg>
+        </div>
+        <div class="intro-text">
+            <h3 class="left">I’m <a class="hover-target purple" href="https://www.beautifultelepath.info/">Yudiantara</a>,</br>a Front/Back-End Developer</h3>
+            <h3 class="right"><span class="purple">a</span> love learning something new <span class="purple">person</span>.</h3>
+        </div>
+    </div>
+</div>
+
+	<div class="second-section post-intro">
+	<div class="mycontainer">
+	  <div class="step-description"><strong style="font-size: 75px;">Reach <span class="purple">me</span> on:</strong></div>
+	  <div class="step-description contact-me">
+	  	<a href="https://www.instagram.com/nymyudiantara" class="hover-target">instagram</a> |
+	  	<a href="https://www.github.com/nyomanyudiantara" class="hover-target">github</a> |
+	  	<a href="https://www.beautifultelepath.info" class="hover-target">blog</a>
+	  </div>
+	</div>
+	</div>
+
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+
+<script type="text/javascript">
+	$(function () {
+    ScrollTrigger.defaults({
+        markers: false
+    });
+    
+    gsap.to(".frontend", {
+        scrollTrigger: {
+            trigger: ".landing",
+            start: "center center",
+            scrub: .5,
+        },
+        xPercent: 25
+    });
+    
+    gsap.to(".developer", {
+        scrollTrigger: {
+            trigger: ".landing",
+            start: "center center",
+            scrub: .5,
+        },
+        xPercent: -25
+    });
+    
+    gsap.to(".intro", {
+        scrollTrigger: {
+            trigger: ".intro",
+            pin: true,
+            start: "center center"
+        }
+    });
+    
+    gsap.to(".left", {
+        scrollTrigger: {
+            trigger: ".left",
+            id: "textleft",
+            start: "top center"
+        },
+        opacity: 1, 
+        duration: 1
+    });
+    
+    gsap.to(".right", {
+        scrollTrigger: {
+            trigger: ".right",
+            id: "textright",
+            start: "top 20%"
+        },
+        opacity: 1, 
+        duration: 1
+    });
+    
+    function smoothMouse() {
+        const target =
+            document.documentElement ||
+            document.body.parentNode ||
+            document.body;
+        const speed = 75;
+        const smooth = 12;
+        let moving = false;
+        let pos = target.scrollTop;
+
+        target.addEventListener("mousewheel", scroll, {
+            passive: false
+        });
+
+        function scroll(e) {
+            // disable default scrolling
+            e.preventDefault();
+
+            let delta;
+
+            if (e.detail) {
+                if (e.wheelDelta)
+                    delta =
+                        (e.wheelDelta / e.detail / 40) *
+                        (e.detail > 0 ? 1 : -1);
+                else delta = -e.detail / 3;
+            } else {
+                delta = e.wheelDelta / 120;
+            }
+
+            pos += -delta * speed;
+            pos = Math.max(
+                0,
+                Math.min(pos, target.scrollHeight - target.clientHeight)
+            );
+
+            if (!moving) update();
+        }
+
+        function update() {
+            moving = true;
+
+            const delta = (pos - target.scrollTop) / smooth;
+
+            target.scrollTop += delta;
+
+            if (Math.abs(delta) > 0.5) window.requestAnimationFrame(update);
+            else moving = false;
+        }
+    }
+
+    const mouse = new smoothMouse();
+});
+
+</script>
+
+<script type="text/javascript">
+	let sections = gsap.utils.toArray(".step-description");
+
+	gsap.to(".mycontainer", {
+	  scrollTrigger: {
+	    trigger: ".mycontainer",
+	    markers: false,
+	    pin: true,
+	    start: "top",
+	    end: 700,
+	    scrub: true
+	  }
+	});
+
+	sections.forEach((element, i) => {
+	  var tl = gsap.timeline({ });
+	  tl.from (element, {autoAlpha: 0, display: 'none'});
+	  tl.to(element, {
+	    autoAlpha: 1,
+	    display: "block",
+	    scrub: 1,
+	    stagger: 4,
+	    scrollTrigger: {
+	      trigger: element,
+	      scrub: true,
+	      stagger: 1,
+	      markers: false,
+	      start: "+=" + 100 * (i + 1),
+	      end: "+=" + 100 * (i + 1)
+	    }
+	  });
+	});
+</script>
+
+<script type="text/javascript">
+
+		gsap.to(".filled-text, .outline-text", {
+			scrollTrigger:{
+				trigger: ".filled-text, .outline-text", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			x: 200
+		})
+
+		gsap.to(".image-animation", {
+			scrollTrigger:{
+				trigger: ".image-animation",
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1,
+				markers: false
+			},
+			x: -250,
+
+		})
+</script>
+
+<script type="text/javascript">
+
+   
+document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+      t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+    function n(t) {
+        e.classList.add("hover", "hover-2"), i.classList.add("hover", "hover-2")
+    }
+    function s(t) {
+        e.classList.remove("hover", "hover-2"), i.classList.remove("hover", "hover-2")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target, .hover-target-2"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+	
+</script>
 
 </body>
 </html>
