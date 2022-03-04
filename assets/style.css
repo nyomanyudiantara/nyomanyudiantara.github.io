@@ -115,6 +115,12 @@
 		    background-color: #d3aa67;
 		}
 
+		.front-back-end h1 {
+			font-size: 175px;
+			margin-bottom: -25px;
+			margin-top: -25px;
+		}
+
 
 		/* */
 		.mycontainer {
@@ -169,6 +175,12 @@
   			z-index: 1;
 		}
 
+		footer {
+			margin-bottom: 20px;
+			text-align: center;
+			font-weight: bolder;
+		}
+
 		/* */
 		.top, .footer{
 			background: #181818 ;
@@ -182,6 +194,7 @@
 			position: relative;
 			width: 100% ;
 			margin-bottom: -150px;
+			overflow-x: hidden;
 		}
 
 		.filled-text{
@@ -217,8 +230,8 @@
 			max-height: 550px ;
 			width: auto ;
 			filter: grayscale(50%);
-			box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);
-			-webkit-box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);
+			box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.3);
+			/*-webkit-box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);*/
 		}
 
 		.purple {
@@ -308,10 +321,39 @@
 				width: 20%;
 			}
 		}
-		@media only screen and (max-width: 1453px) {
-			.front-back-end h1 {
-				/*height: 100vh;*/
-				/*overflow-y: hidden;*/
+		/*@media only screen and (max-width: 1453px) {
+			.front-back-end {
+				height: 100vh;
 				font-size: 20px !important;
+			}
+		}*/
+		@media only screen and (max-width: 1142px) {
+			.front-back-end h1 {
+				font-size: 100px;
+			}
+		}
+		@media only screen and (max-width: 581px) {
+			.front-back-end h1 {
+				font-size: 50px;
+			}
+		}
+		@media only screen and (max-width: 873px) {
+			.front-back-end h1 {
+				margin-bottom: 18px;
+			}
+		}
+		@media only screen and (min-width: 581px) and (max-width: 698px) {
+			.front-back-end h1 {
+				margin-bottom: 3px;
+			}
+		}
+		@media only screen and (max-width: 487px) {
+			.front-back-end h1 {
+				margin-bottom: -1px;
+			}
+		}
+		@media only screen and (min-width: 698px) and (max-width: 873px) {
+			.front-back-end h1 {
+				margin-bottom: -2px;
 			}
 		}
