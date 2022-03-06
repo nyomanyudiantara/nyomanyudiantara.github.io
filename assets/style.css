@@ -229,9 +229,9 @@
 			z-index: 2 ;
 			max-height: 550px ;
 			width: auto ;
-			filter: grayscale(50%);
-			box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.3);
-			/*-webkit-box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);*/
+			/*filter: grayscale(50%);*/
+			box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);
+			-webkit-box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);
 		}
 
 		.purple {
@@ -315,6 +315,9 @@
 		  color: rebeccapurple;
 		}
 
+
+
+
 		@media only screen and (max-width: 1500px) {
 			.image-animation {
 				height: 350px;
@@ -355,5 +358,15 @@
 		@media only screen and (min-width: 698px) and (max-width: 873px) {
 			.front-back-end h1 {
 				margin-bottom: -2px;
+			}
+		}
+		@media only screen and (min-width: 1142px) {
+			.front-back-end h1 {
+				font-size: 130px;
+			}
+		}
+		@media only screen and (min-width: 1496px) {
+			.front-back-end h1 {
+				font-size: 175px;
 			}
 		}
