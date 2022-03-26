@@ -235,8 +235,8 @@
 			max-height: 550px ;
 			width: auto ;
 			/*filter: grayscale(50%);*/
-			box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);
-			-webkit-box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);
+/* 			box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3);
+			-webkit-box-shadow: 0 0 10px 7px rgba(77, 38, 115, 0.3); */
 		}
 
 		.purple {
