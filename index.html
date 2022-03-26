@@ -27,7 +27,7 @@
 		<div class="container">
 			<h2 class="filled-text" style="text-transform: uppercase;">Yudiantara I Nyoman</h2>
 			<h2 class="outline-text" style="text-transform: uppercase;">Yudiantara I Nyoman</h2>
-			<img class="image-animation" alt="Yudiantara" src="assets/img/Yudiantara.jpg">
+			<img id="yudiantara" class="image-animation" alt="Yudiantara" src="assets/img/Yudiantara.jpg">
 		</div>
 	</section>
 
@@ -280,7 +280,7 @@ document.getElementsByTagName("body")[0].addEventListener("mousemove", function(
         e.classList.remove("hover", "hover-2"), i.classList.remove("hover", "hover-2")
     }
     s();
-    for (var r = document.querySelectorAll(".hover-target, .hover-target-2"), a = r.length - 1; a >= 0; a--) {
+    for (var r = document.querySelectorAll(".hover-target, .plus-logo, #yudiantara"), a = r.length - 1; a >= 0; a--) {
         o(r[a])
     }
     function o(t) {
